@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- ========================================== -->
+    <!-- ١. المعلومات الأساسية والترميز             -->
+    <!-- ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#059669">
+
+    <!-- ========================================== -->
+    <!-- ٢. تحسين محركات البحث (SEO الأساسي)       -->
+    <!-- ========================================== -->
+    <title>مسابقة Mathani الثقافية | الإعلان الرسمي والتحدي الإسلامي</title>
+    <meta name="description" content="انطلق في رحلة معرفية ممتعة مع مسابقة Mathani الثقافية الإسلامية. 15 سؤالاً متنوعاً في قصص الأنبياء، السيرة النبوية، المفاهيم الدينية، والأخلاق الإسلامية. شارك وتعلم الآن!">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="قناة Mathani لحفظ القرآن">
+    <meta name="keywords" content="مسابقة إسلامية, Mathani, كويز ثقافي, أسئلة دينية, قصص الأنبياء, السيرة النبوية, تحدي إسلامي, شهر رمضان">
+
+    <!-- ========================================== -->
+    <!-- ٣. علامات المشاركة الاجتماعية (Open Graph) -->
+    <!-- ========================================== -->
+    <meta property="og:title" content="مسابقة Mathani الثقافية – اختبر معرفتك الإسلامية">
+    <meta property="og:description" content="15 سؤالاً ممتعاً وشيقاً في قصص الأنبياء والسيرة والمفاهيم الإسلامية. شاركنا التحدي وانظر نتيجتك!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mathani.hadjerhub.workers.dev/">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- تم حذف og:image بناءً على طلبك (لن نضيف صورة) -->
+
+    <!-- ========================================== -->
+    <!-- ٤. علامات تويتر (Twitter Cards) - بدون صورة -->
+    <!-- ========================================== -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="مسابقة Mathani الثقافية – التحدي الإسلامي">
+    <meta name="twitter:description" content="اختبر ثقافتك الإسلامية في 15 سؤالاً متنوعاً. شارك نتيجتك مع أصدقائك!">
+
+    <!-- ========================================== -->
+    <!-- ٥. الأيقونة المفضلة (Favicon)             -->
+    <!-- ========================================== -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+
+    <!-- ========================================== -->
+    <!-- ٦. الروابط الخارجية (CDN والخطوط)          -->
+    <!-- ========================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { font-family: 'Cairo', sans-serif; }
+        body {
+            background: linear-gradient(145deg, #f0fdf4 0%, #dcfce7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+        .promo-card {
+            max-width: 820px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 48px 48px 32px 32px;
+            box-shadow: 0 30px 60px -20px rgba(5, 150, 105, 0.3), 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            padding: 2.5rem 2rem;
+            transition: all 0.3s;
+        }
+        .glow-badge {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+            color: #1e293b;
+            font-weight: 900;
+            padding: 0.35rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            box-shadow: 0 6px 16px rgba(245, 158, 11, 0.25);
+        }
+        .feature-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, #ecfdf5, #d1fae5);
+            border-radius: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            color: #047857;
+            border: 1px solid #a7f3d0;
+            transition: 0.2s;
+        }
+        .feature-card {
+            background: white;
+            border-radius: 24px;
+            padding: 1.2rem 1rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            transition: 0.25s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: #6ee7b7;
+            box-shadow: 0 16px 30px -12px rgba(5, 150, 105, 0.15);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #059669, #10b981);
+            border: none;
+            padding: 1rem 2.4rem;
+            border-radius: 60px;
+            font-weight: 800;
+            color: white;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 28px -8px rgba(5, 150, 105, 0.4);
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .btn-primary:hover {
+            transform: scale(1.04) translateY(-3px);
+            box-shadow: 0 18px 36px -10px rgba(5, 150, 105, 0.5);
+        }
+        .mock-question {
+            background: #fafefa;
+            border-radius: 28px;
+            border: 2px solid #e2e8f0;
+            padding: 1.5rem 1.8rem;
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+        .mock-option {
+            background: white;
+            border-radius: 14px;
+            padding: 0.8rem 1.2rem;
+            border: 1.5px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 600;
+            color: #1e293b;
+        }
+        .mock-option .badge {
+            width: 28px;
+            height: 28px;
+            border-radius: 30px;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 800;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+        }
+        .mock-option.correct .badge {
+            background: #10b981;
+            border-color: #10b981;
+            color: white;
+        }
+        .mock-option.correct {
+            border-color: #10b981;
+            background: #ecfdf5;
+        }
+        .stat-bubble {
+            background: white;
+            border-radius: 60px;
+            padding: 0.5rem 1.5rem;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: #047857;
+            border: 1px solid #d1fae5;
+            box-shadow: 0 4px 12px rgba(5, 150, 105, 0.06);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .pulse {
+            animation: pulseSoft 2s infinite;
+        }
+        @keyframes pulseSoft {
+            0% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.15); }
+            70% { box-shadow: 0 0 0 16px rgba(5, 150, 105, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+        }
+        .float-badge {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+            100% { transform: translateY(0px); }
+        }
+        @media (max-width: 640px) {
+            .promo-card { padding: 1.5rem 1rem; }
+            .mock-question { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="promo-card">
+
+    <!-- الهيدر مع الشعار والأزرار -->
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div class="flex items-center gap-3">
+            <div class="bg-emerald-600 text-white p-2.5 rounded-2xl shadow-lg shadow-emerald-200">
+                <i class="fas fa-book-open text-xl"></i>
+            </div>
+            <div>
+                <h1 class="font-extrabold text-2xl text-emerald-900 leading-tight">مسابقة Mathani</h1>
+                <span class="text-xs text-slate-500 font-semibold">🏆 الثقافية التفاعلية</span>
+            </div>
+        </div>
+        <div class="flex items-center gap-2">
+    <a href="https://www.youtube.com/@MathaniQuran" 
+       target="_blank" rel="noopener"
+       class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-xl text-sm font-bold shadow-md shadow-red-200 transition flex items-center gap-2">
+        <i class="fab fa-youtube"></i> <span class="hidden sm:inline">يوتيوب</span>
+    </a>
+    <a href="https://mathani.hadjerhub.workers.dev/" 
+       target="_blank" rel="noopener"
+       class="bg-emerald-700 hover:bg-emerald-800 text-white px-4 py-2 rounded-xl text-sm font-bold shadow-md shadow-emerald-200 transition flex items-center gap-2">
+        <i class="fas fa-globe"></i> <span class="hidden sm:inline">موقع مثاني</span>
+    </a>
+</div>
+    </div> 
+
+
+    <!-- العنوان التشويقي الرئيسي -->
+    <div class="text-center mb-8">
+        <span class="glow-badge"><i class="fas fa-star text-yellow-700 ml-1"></i> إصدار رمضان 2026</span>
+        <h2 class="text-3xl md:text-4xl font-black text-slate-800 mt-3 leading-tight">
+            اختبر ثقافتك الإسلامية <br />
+            <span class="text-emerald-600 underline decoration-emerald-300 decoration-4">في 15 سؤالاً ممتعاً</span>
+        </h2>
+        <p class="text-slate-600 mt-2 max-w-md mx-auto text-sm">
+            قصص الأنبياء • السيرة النبوية • مفاهيم يومية • أخلاق وقيم
+        </p>
+    </div>
+
+    <!-- كروت المميزات (4 نقاط رئيسية) -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+        <div class="feature-card text-center">
+            <div class="feature-icon mx-auto"><i class="fas fa-users"></i></div>
+            <p class="font-extrabold text-slate-800 text-sm mt-2">15 سؤالاً</p>
+            <p class="text-xs text-slate-400">تنوع معرفي شامل</p>
+        </div>
+        <div class="feature-card text-center">
+            <div class="feature-icon mx-auto"><i class="fas fa-trophy"></i></div>
+            <p class="font-extrabold text-slate-800 text-sm mt-2">تقييم فوري</p>
+            <p class="text-xs text-slate-400">مع شروح وتلميحات</p>
+        </div>
+        <div class="feature-card text-center">
+            <div class="feature-icon mx-auto"><i class="fas fa-share-alt"></i></div>
+            <p class="font-extrabold text-slate-800 text-sm mt-2">مشاركة سريعة</p>
+            <p class="text-xs text-slate-400">واتساب + يوتيوب</p>
+        </div>
+        <div class="feature-card text-center">
+            <div class="feature-icon mx-auto"><i class="fas fa-brain"></i></div>
+            <p class="font-extrabold text-slate-800 text-sm mt-2">مراجعة ذكية</p>
+            <p class="text-xs text-slate-400">لتعزيز الفائدة</p>
+        </div>
+    </div>
+
+    <!-- معاينة حية (سؤال نموذجي + نتيجة) بنفس أسلوب الصور المرفقة -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
+        <!-- جهة اليمين: نموذج سؤال -->
+        <div class="mock-question">
+            <div class="flex items-start gap-2 mb-2">
+                <span class="bg-emerald-100 text-emerald-800 text-[0.6rem] font-extrabold px-3 py-0.5 rounded-full">السيرة النبوية</span>
+                <span class="text-[0.6rem] text-slate-400 mr-auto">١ من ١٥</span>
+            </div>
+            <p class="font-bold text-slate-800 text-sm leading-relaxed">
+                من هو النبي الكريم الذي لُقّب بـ "أبو الأنبياء" ودعا ربه ليريه كيف يحيي الموتى طمأنينة لقلبه؟
+            </p>
+            <div class="space-y-2 mt-3">
+                <div class="mock-option correct">
+                    <span class="badge"><i class="fas fa-check text-white text-[0.6rem]"></i></span>
+                    إبراهيم عليه السلام
+                </div>
+                <div class="mock-option">
+                    <span class="badge">ب</span>
+                    نوح عليه السلام
+                </div>
+                <div class="mock-option">
+                    <span class="badge">ج</span>
+                    موسى عليه السلام
+                </div>
+            </div>
+            <div class="mt-3 bg-amber-50 p-2.5 rounded-xl border border-amber-100 text-xs text-amber-800 flex items-start gap-2">
+                <i class="fas fa-lightbulb text-amber-500 mt-0.5"></i>
+                <span>تلميح: هو النبي الذي بنى الكعبة مع ابنه إسماعيل وجعل الله في ذريته النبوة والكتاب.</span>
+            </div>
+        </div>
+
+        <!-- جهة اليسار: معاينة النتيجة -->
+        <div class="bg-gradient-to-br from-emerald-50 to-white p-5 rounded-3xl border border-emerald-100 flex flex-col items-center justify-center text-center">
+            <div class="float-badge">
+                <span class="text-4xl">🌟</span>
+            </div>
+            <h3 class="font-black text-xl text-emerald-800 mt-1">امتياز نبيل وعلامة كاملة!</h3>
+            <p class="text-sm text-slate-600">مبارك عليك العلامة الكاملة، سفير الخير!</p>
+            <div class="flex items-center gap-6 mt-3">
+                <div>
+                    <span class="block text-3xl font-black text-emerald-600">15 / 15</span>
+                    <span class="text-[0.6rem] font-bold text-slate-400">النتيجة</span>
+                </div>
+                <div>
+                    <span class="block text-3xl font-black text-slate-800">100%</span>
+                    <span class="text-[0.6rem] font-bold text-slate-400">النسبة</span>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4 w-full">
+                <button class="flex-1 bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1">
+                    <i class="fab fa-whatsapp"></i> واتساب
+                </button>
+                <button class="flex-1 bg-slate-800 hover:bg-slate-900 text-white text-xs font-bold py-2 px-3 rounded-xl transition flex items-center justify-center gap-1">
+                    <i class="fas fa-copy"></i> يوتيوب
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- شريط الحماس الإضافي مع إحصائيات -->
+    <div class="flex flex-wrap items-center justify-between gap-3 bg-white/60 backdrop-blur-sm p-4 rounded-3xl border border-emerald-100 mb-6">
+        <div class="flex items-center gap-4">
+            <span class="stat-bubble pulse"><i class="fas fa-user-graduate"></i> 1000+ مشارك</span>
+            <span class="stat-bubble"><i class="fas fa-clock"></i> 5 دقائق فقط</span>
+        </div>
+        <span class="text-sm font-bold text-emerald-700 bg-emerald-100 px-4 py-1.5 rounded-full">
+            <i class="fas fa-fire text-orange-500 ml-1"></i> تحدّى أصدقاءك الآن!
+        </span>
+    </div>
+
+    <!-- زر الدعوة الرئيسي (Call to Action) -->
+    <div class="text-center">
+    <a href="index.html" class="btn-primary">
+        <i class="fas fa-play"></i> ابدأ التحدي الآن
+        <i class="fas fa-arrow-left text-sm"></i>
+    </a>
+    <p class="text-[0.6rem] text-slate-400 mt-2">📸 اضغط على الزر أو خذ لقطة شاشة لهذه البطاقة وشاركها</p>
+</div>
+
+    <!-- تذييل بسيط -->
+    <div class="mt-6 pt-4 border-t border-emerald-100 text-center text-[0.6rem] text-slate-400 flex flex-wrap justify-center gap-3">
+        <span>📖 جميع الأسئلة من مصادر موثوقة</span>
+        <span>•</span>
+        <a href="#" class="hover:text-emerald-700"><i class="fas fa-globe ml-1"></i> مثاني لحفظ القرآن</a>
+        <span>•</span>
+        <span><i class="fab fa-youtube ml-1"></i> MathaniQuran</span>
+    </div>
+
+</div>
+
+<!-- أيقونات عائمة للزينة (خفيفة) -->
+<div style="position: fixed; bottom: 20px; right: 20px; opacity: 0.1; pointer-events: none; font-size: 4rem; color: #10b981;">
+    <i class="fas fa-mosque"></i>
+</div>
+<div style="position: fixed; top: 20px; left: 20px; opacity: 0.08; pointer-events: none; font-size: 4rem; color: #059669;">
+    <i class="fas fa-star-and-crescent"></i>
+</div>
+
+</body>
+</html>

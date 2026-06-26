@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- ========================================== -->
+    <!-- ١. المعلومات الأساسية والترميز             -->
+    <!-- ========================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#059669">
+
+    <!-- ========================================== -->
+    <!-- ٢. تحسين محركات البحث (SEO الأساسي)       -->
+    <!-- ========================================== -->
+    <title>كويز Mathani الثقافي التفاعلي | اختبر ثقافتك الإسلامية في ١٥ سؤالاً</title>
+    <meta name="description" content="مسابقة ثقافية إسلامية ممتعة من قناة Mathani. ١٥ سؤالاً شيقة في قصص الأنبياء، السيرة النبوية، المفاهيم الدينية، والأخلاق الإسلامية. اختبر معلوماتك وتعلم معنا!">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="قناة Mathani لحفظ القرآن">
+    <meta name="keywords" content="كويز إسلامي, مسابقة ثقافية, قناة Mathani, أسئلة دينية, قصص الأنبياء, السيرة النبوية, ثقافة إسلامية, اختبار ديني">
+
+    <!-- ========================================== -->
+    <!-- ٣. علامات المشاركة الاجتماعية (Open Graph) -->
+    <!-- ========================================== -->
+    <meta property="og:title" content="كويز Mathani الثقافي التفاعلي – ١٥ سؤالاً">
+    <meta property="og:description" content="اختبر معلوماتك الإسلامية في قصص الأنبياء والسيرة والأخلاق. مسابقة تفاعلية ممتعة لجميع الأعمار!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mathani.hadjerhub.workers.dev/">
+    <!-- صورة مصغرة جذابة للمشاركة (يُفضل وضع صورة بانر ١٢٠٠×٦٣٠) -->
+
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="ar_AR">
+
+    <!-- ========================================== -->
+    <!-- ٤. علامات تويتر (Twitter Cards)            -->
+    <!-- ========================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="كويز Mathani الثقافي التفاعلي">
+    <meta name="twitter:description" content="١٥ سؤالاً ممتعاً في الثقافة الإسلامية. اختبر نفسك وشارك نتيجتك!">
+  
+
+    <!-- ========================================== -->
+    <!-- ٥. الأيقونة المفضلة (Favicon) باللغتين     -->
+    <!-- ========================================== -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕌</text></svg>">
+
+    <!-- ========================================== -->
+    <!-- ٦. الروابط الخارجية (CDN والخطوط)          -->
+    <!-- ========================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0fdf4; /* خلفية خضراء إسلامية هادئة مريحة للعين */
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+        }
+        .option-btn {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      /* =============================================
+   تحسينات احترافية لعناصر الدعاية (مثاني - يوتيوب)
+   ============================================= */
+
+/* 1. جعل مجموعة الأزرار في الهيدر أكثر أناقة ومرونة */
+header .flex-wrap.gap-2 {
+    gap: 0.75rem; /* زيادة التباعد قليلاً */
+}
+
+/* 2. تنسيق موحد ومحسّن للأزرار الدعائية */
+header a[target="_blank"],
+header a[rel="noopener"] {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff; /* خلفية بيضاء أساسية */
+    color: #1e293b; /* لون نص داكن */
+    border: 1.5px solid #e2e8f0; /* حد رمادي فاتح */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.85);
+}
+
+/* تخصيص زر يوتيوب (أحمر) */
+header a[href*="youtube"] {
+    background: #ff0000;
+    border-color: #cc0000;
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.2);
+}
+
+header a[href*="youtube"]:hover {
+    background: #cc0000;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 0, 0, 0.3);
+}
+
+/* تخصيص زر موقع مثاني (أخضر زمردي) */
+header a[href*="mathani.hadjerhub"] {
+    background: #059669;
+    border-color: #047857;
+    color: white;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+}
+
+header a[href*="mathani.hadjerhub"]:hover {
+    background: #047857;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.35);
+}
+
+/* أيقونات SVG داخل الأزرار – تحجيم وتناسق */
+header a svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+
+header a:hover svg {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* 3. شعار القناة والنص في الهيدر – تحسين التباعد */
+header .flex.items-center.gap-3 {
+    gap: 0.75rem;
+}
+
+header .bg-emerald-600.rounded-xl {
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(5, 150, 105, 0.2);
+}
+
+/* 4. تذييل الصفحة – تحسين الدعاية والروابط */
+footer {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    border-top: 1px solid rgba(5, 150, 105, 0.15);
+    padding: 1.2rem 0.5rem;
+}
+
+footer .flex-wrap {
+    gap: 0.5rem 1.5rem;
+}
+
+footer a[href*="mathani.hadjerhub"] {
+    background: #ecfdf5;
+    padding: 0.4rem 1rem;
+    border-radius: 40px;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+    font-weight: 700;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+footer a[href*="mathani.hadjerhub"]:hover {
+    background: #d1fae5;
+    border-color: #059669;
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.15);
+}
+
+/* 5. استجابة محسّنة للشاشات الصغيرة (أقل من 640px) */
+@media (max-width: 640px) {
+    /* جعل أزرار الهيدر تمتد بعرض مناسب */
+    header .flex-wrap.gap-2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header a[target="_blank"],
+    header a[rel="noopener"] {
+        padding: 0.5rem 0.9rem;
+        font-size: 0.75rem;
+        flex: 0 1 auto;
+        min-width: 100px;
+        justify-content: center;
+    }
+
+    /* إخفاء النص الطويل للهواتف الصغيرة جداً – نكتفي بالأيقونة + كلمة مختصرة */
+    header a span.sm\:inline {
+        display: none !important;
+    }
+    header a span.sm\:hidden {
+        display: inline !important;
+    }
+
+    /* تذييل: جعل النص والرابط في سطرين منفصلين */
+    footer .flex-wrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer a[href*="mathani.hadjerhub"] {
+        font-size: 0.85rem;
+        padding: 0.3rem 1.2rem;
+    }
+}
+
+/* 6. تحسين تجربة اللمس على الأجهزة اللوحية والجوال */
+@media (hover: none) {
+    header a[target="_blank"]:active,
+    header a[rel="noopener"]:active {
+        transform: scale(0.96);
+        transition-duration: 0.05s;
+    }
+}
+
+/* 7. إضافة لمسة جمالية: شريط جانبي وهمي تحت الأزرار */
+header a[target="_blank"]::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background: currentColor;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scaleX(0.5);
+    border-radius: 4px;
+}
+
+header a[target="_blank"]:hover::after {
+    opacity: 0.3;
+    transform: scaleX(1);
+}
+
+/* 8. جعل زر "موقع مثاني" في التذييل أكثر بروزاً مع أيقونة */
+footer a[href*="mathani.hadjerhub"]::before {
+    content: "📖";
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+        /* ============================
+           زر "التالي" وشريط التقدم
+        ============================ */
+        #progress-bar-fill {
+            background: linear-gradient(90deg, #059669, #10b981, #34d399);
+            background-size: 200% 100%;
+            animation: progressMove 2s linear infinite;
+            transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @keyframes progressMove {
+            0%   { background-position: 0% 0%; }
+            100% { background-position: 200% 0%; }
+        }
+
+        #next-btn {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        #next-btn:not(:disabled):hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(5,150,105,0.25);
+        }
+        #next-btn:not(:disabled):active {
+            transform: scale(0.95);
+        }
+
+        /* ============================
+           التلميح (accordion)
+        ============================ */
+        #hint-accordion {
+            transition: all 0.3s ease;
+        }
+        #hint-accordion button:hover {
+            background: #fef3c7;
+        }
+        #hint-content {
+            animation: fadeInUp 0.3s ease;
+        }
+
+        /* ============================
+           شاشة النتائج – احتفال وتأثيرات
+        ============================ */
+        #results-screen .inline-block.animate-bounce {
+            animation: popIn 0.8s ease, pulseGlow 1.5s ease infinite;
+        }
+     /* أنيميشن ظهور البطاقات */
+#results-screen .grid > div {
+    animation: scaleIn 0.6s ease forwards;
+    opacity: 0;
+}
+/* تأخير ظهور كل بطاقة بالترتيب */
+#results-screen .grid > div:nth-child(1) { animation-delay: 0.1s; }  /* النتيجة النهائية */
+#results-screen .grid > div:nth-child(2) { animation-delay: 0.2s; }  /* النسبة المئوية */
+#results-screen .grid > div:nth-child(3) { animation-delay: 0.3s; }  /* الصحيحة */
+#results-screen .grid > div:nth-child(4) { animation-delay: 0.4s; }  /* الخاطئة */
+@keyframes scaleIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+/* تحسينات للأجهزة الصغيرة: جعل البطاقات في عمودين بدلاً من 4 */
+@media (max-width: 640px) {
+    #results-screen .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+    #results-screen .grid > div {
+        padding: 0.75rem;
+    }
+    #results-screen .grid > div span:first-child {
+        font-size: 1.5rem;
+    }
+}
+
+        /* رسالة التقييم */
+        #eval-title {
+            animation: popIn 0.6s ease 0.5s both;
+        }
+        #eval-desc {
+            animation: fadeInUp 0.6s ease 0.7s both;
+        }
+
+        /* ============================
+           احتفال بسيط عند الفوز (درجة ≥ 80%)
+           تم إخفاؤه افتراضياً
+        ============================ */
+        .confetti-container {
+            position: relative;
+            height: 80px;
+            margin: -20px 0 10px;
+            pointer-events: none;
+            display: none;  /* تم إخفاؤه حتى يتم تفعيله */
+        }
+        .confetti-piece {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 2px;
+            animation: confettiFall 2.5s linear infinite;
+            opacity: 0;
+        }
+        .confetti-piece:nth-child(1) { left: 5%;  animation-delay: 0.0s; background: #f59e0b; }
+        .confetti-piece:nth-child(2) { left: 20%; animation-delay: 0.4s; background: #ef4444; }
+        .confetti-piece:nth-child(3) { left: 35%; animation-delay: 0.8s; background: #3b82f6; }
+        .confetti-piece:nth-child(4) { left: 50%; animation-delay: 0.2s; background: #22c55e; }
+        .confetti-piece:nth-child(5) { left: 65%; animation-delay: 0.6s; background: #a855f7; }
+        .confetti-piece:nth-child(6) { left: 80%; animation-delay: 1.0s; background: #ec4899; }
+        .confetti-piece:nth-child(7) { left: 92%; animation-delay: 0.3s; background: #f97316; }
+
+        /* ============================
+           مراجعة الأسئلة (summary)
+        ============================ */
+        #detailed-summary {
+            scroll-behavior: smooth;
+        }
+        #detailed-summary .space-y-4 > div {
+            animation: fadeInUp 0.4s ease;
+            transition: all 0.3s ease;
+        }
+        #detailed-summary .space-y-4 > div:hover {
+            transform: translateX(6px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+
+        /* ============================
+           تحسينات الأجهزة الصغيرة (≤ 640px)
+        ============================ */
+        @media (max-width: 640px) {
+            body {
+                padding: 0.5rem;
+            }
+            header .flex-wrap {
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            header a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.75rem;
+                min-width: 80px;
+                justify-content: center;
+            }
+            header a span.sm\:inline {
+                display: none !important;
+            }
+            header a span.sm\:hidden {
+                display: inline !important;
+            }
+            .option-btn {
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+                border-radius: 12px;
+                transition: all 0.25s cubic-bezier(0.34,1.56,0.64,1);
+                animation: fadeInUp 0.5s ease forwards;
+                opacity: 0;
+            }
+            .option-btn:nth-child(1) { animation-delay: 0.05s; }
+            .option-btn:nth-child(2) { animation-delay: 0.12s; }
+            .option-btn:nth-child(3) { animation-delay: 0.19s; }
+            .option-btn:nth-child(4) { animation-delay: 0.26s; }
+            .option-btn:hover:not([disabled]) {
+    transform: translateY(-3px) scale(1.01);
+    border-color: #6ee7b7;
+    background: #ecfdf5;
+    box-shadow: 0 8px 20px rgba(5,150,105,0.08);
+}
+.option-btn:active:not([disabled]) { transform: scale(0.96); }
+            #question-text {
+                font-size: 1.1rem;
+            }
+            #results-screen .grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+            #results-screen .grid > div {
+                padding: 0.75rem;
+            }
+            #results-screen .grid > div span:first-child {
+                font-size: 1.5rem;
+            }
+            footer .flex-wrap {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.3rem;
+            }
+            .confetti-piece {
+                width: 6px;
+                height: 6px;
+            }
+        }
+
+        /* ============================
+           تحسينات للأجهزة اللوحية (640px - 1024px)
+        ============================ */
+        @media (min-width: 641px) and (max-width: 1024px) {
+            .option-btn {
+                padding: 0.9rem 1.2rem;
+            }
+            #results-screen .grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .option-btn.correct {
+    border-color: #22c55e !important;
+    background: #dcfce7 !important;
+    animation: popIn 0.4s ease, pulseGlow 1.2s ease 2;
+    transform: scale(1.03);
+}
+.option-btn.wrong {
+    border-color: #ef4444 !important;
+    background: #fee2e2 !important;
+    animation: shake 0.5s ease;
+}
+
+        /* ============================
+           جعل كل شيء سلس – إضافات عامة
+        ============================ */
+        * {
+            transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        button, a {
+            -webkit-tap-highlight-color: transparent;
+        }
+        .rounded-3xl {
+            border-radius: 2rem;
+        }
+        .rounded-2xl {
+            border-radius: 1.25rem;
+        }
+      @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-6px); }
+    80% { transform: translateX(6px); }
+}
+#welcome-screen .grid>div {
+    transition: all 0.3s ease;
+    cursor: default;
+}
+#welcome-screen .grid>div:hover {
+    transform: translateY(-6px) scale(1.02);
+    background: #ecfdf5;
+    border-color: #6ee7b7;
+    box-shadow: 0 10px 25px rgba(5,150,105,0.1);
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* =============================================
+   إصلاح ألوان النتائج مع خلفية واضحة
+   ============================================= */
+#final-score,
+#percentage,
+#correct-count,
+#incorrect-count {
+    font-size: 2rem !important;        /* تكبير الخط ليصبح واضحاً */
+    font-weight: 900 !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.05) !important; /* ظل خفيف */
+    background: white !important;      /* خلفية بيضاء خلف النص */
+    padding: 0.1rem 0.5rem !important;
+    border-radius: 8px !important;
+    display: inline-block !important;
+}
+
+#final-score {
+    color: #047857 !important; /* أخضر غامق جداً */
+}
+
+#percentage {
+    color: #1e3a8a !important; /* أزرق غامق جداً */
+}
+
+#correct-count {
+    color: #047857 !important; /* أخضر غامق */
+}
+
+#incorrect-count {
+    color: #b91c1c !important; /* أحمر غامق */
+}
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 md:p-8 text-slate-800">
+
+    <!-- الترويسة / الهيدر -->
+    <header class="w-full max-w-4xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 mb-6 bg-white p-4 rounded-2xl shadow-sm border border-emerald-100">
+    <!-- القسم الأيمن: الشعار + النص -->
+    <div class="flex items-center gap-3 justify-center md:justify-start">
+        <div class="bg-emerald-600 text-white p-2.5 rounded-xl shadow-md shadow-emerald-200 flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+        </div>
+        <div>
+            <h1 class="font-bold text-base md:text-lg text-emerald-800 leading-tight">مسابقة Mathani الثقافية</h1>
+            <p class="text-xs text-slate-500 font-semibold">رحلة معرفية ممتعة وسهلة لجميع الأعمار</p>
+        </div>
+    </div>
+
+    <!-- القسم الأيسر: الأزرار (ستنزل للسطر التالي في الجوال تلقائياً) -->
+    <div class="flex flex-wrap items-center justify-center gap-2 md:justify-end">
+        <!-- زر يوتيوب -->
+        <a href="https://www.youtube.com/@MathaniQuran" target="_blank" class="flex items-center gap-2 bg-red-600 hover:bg-red-700 active:scale-95 text-white px-3.5 py-2 rounded-xl shadow-md shadow-red-200 transition-all font-bold text-xs sm:text-sm">
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.528 3.545 12 3.545 12 3.545s-7.528 0-9.388.511a3.003 3.003 0 0 0-2.11 2.107C0 8.028 0 12 0 12s0 3.972.502 5.837a3.003 3.003 0 0 0 2.11 2.107c1.86.511 9.388.511 9.388.511s7.528 0 9.388-.511a3.003 3.003 0 0 0 2.11-2.107c.502-1.865.502-5.837.502-5.837s0-3.972-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span class="hidden sm:inline">قناتنا على يوتيوب</span>
+            <span class="sm:hidden">يوتيوب</span>
+        </a>
+
+        <!-- زر موقع مثاني -->
+        <a href="https://mathani.hadjerhub.workers.dev/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-emerald-700 hover:bg-emerald-800 active:scale-95 text-white px-3.5 py-2 rounded-xl shadow-md shadow-emerald-200 transition-all font-bold text-xs sm:text-sm">
+            <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 4v2m8-2v2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+            <span class="hidden sm:inline">موقع مثاني لحفظ القرآن وتدبره</span>
+            <span class="sm:hidden">مثاني</span>
+        </a>
+    </div>
+</header>
+
+    <!-- حاوية المحتوى الرئيسي -->
+    <main class="w-full max-w-4xl mx-auto my-auto flex-grow flex items-center justify-center">
+
+        <!-- 1. شاشة الترحيب والبداية -->
+        <div id="welcome-screen" class="w-full bg-white rounded-3xl p-6 md:p-10 custom-shadow border border-emerald-100 text-center flex flex-col items-center">
+            <span class="px-4 py-1.5 bg-emerald-100 text-emerald-800 text-xs font-extrabold rounded-full tracking-wide uppercase mb-4">مسابقة تفاعلية ممتعة</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-800 mb-4">مرحباً بكم في مسابقة الثقافة الإسلامية</h2>
+            <p class="text-slate-600 mb-8 max-w-lg leading-relaxed text-sm md:text-base">
+                أهلاً بكم يا متابعي قناة <strong class="text-emerald-700 font-bold">Mathani</strong> الأعزاء. أعددنا لكم هذا الاختبار التفاعلي البسيط والممتع المكون من <strong class="text-emerald-700 font-bold">15 سؤالاً</strong> لنتعلم ونتسلى معاً في قصص الأنبياء، وسيرة نبينا ﷺ، والآداب والأخلاق اليومية الجميلة.
+               </p>
+                <p class="text-slate-600 mb-8 max-w-lg leading-relaxed text-sm md:text-base">
+    ... يمكنكم أيضاً زيارة موقعنا الرسمي 
+    <a href="https://mathani.hadjerhub.workers.dev/" target="_blank" class="text-emerald-700 font-bold underline hover:text-emerald-900">
+        مثاني لحفظ القرآن
+    </a>
+    للاستفادة من برامج الحفظ والتلاوة.
+
+</p>
+         
+
+            <!-- كروت توضيحية لجمال الأقسام -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-2xl mb-8">
+    <div class="bg-emerald-50/50 p-4 rounded-2xl border border-emerald-100 flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">🕌</span>
+        <span class="font-bold text-slate-700 text-sm">السيرة والأنبياء</span>
+        <span class="text-xs text-slate-400">قصص ملهمة وعبر رائعة</span>
+    </div>
+    <div class="bg-emerald-50/50 p-4 rounded-2xl border border-emerald-100 flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">⭐</span>
+        <span class="font-bold text-slate-700 text-sm">مفاهيم ميسرة</span>
+        <span class="text-xs text-slate-400">معلومات تهم كل مسلم</span>
+    </div>
+    <div class="bg-emerald-50/50 p-4 rounded-2xl border border-emerald-100 flex flex-col items-center justify-center">
+        <span class="text-2xl mb-1">🌱</span>
+        <span class="font-bold text-slate-700 text-sm">أخلاق وآداب</span>
+        <span class="text-xs text-slate-400">لتزيين حياتنا اليومية</span>
+    </div>
+</div>
+
+            <button onclick="startQuiz()" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold rounded-2xl shadow-lg shadow-emerald-200 transition-all text-lg flex items-center justify-center gap-2">
+                ابدأ التحدي الآن
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- 2. شاشة عرض الأسئلة -->
+        <div id="quiz-screen" class="hidden w-full bg-white rounded-3xl p-5 md:p-8 custom-shadow border border-emerald-100">
+            <!-- شريط التقدم والمعلومات -->
+            <div class="mb-6">
+                <div class="flex justify-between items-center text-xs font-bold text-slate-500 mb-2">
+                    <span id="question-index-badge" class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">السؤال 1 من 15</span>
+                    <span id="topic-badge" class="text-emerald-600 max-w-[200px] sm:max-w-none truncate">المحور: قصص الأنبياء والسيرة النبوية</span>
+                </div>
+                <!-- شريط تقدم مرئي -->
+                <div class="w-full bg-slate-100 h-2.5 rounded-full overflow-hidden">
+                    <div id="progress-bar-fill" class="bg-emerald-600 h-full rounded-full transition-all duration-300" style="width: 6.66%;"></div>
+                </div>
+            </div>
+
+            <!-- نص السؤال -->
+            <div class="mb-6">
+                <h3 id="question-text" class="text-lg md:text-xl font-bold text-slate-800 leading-relaxed">
+                    جاري تحميل السؤال...
+                </h3>
+            </div>
+
+            <!-- حاوية الخيارات التفاعلية -->
+            <div id="options-container" class="space-y-3 mb-6">
+                <!-- يتم حقن الخيارات ديناميكياً بواسطة الجافاسكريبت -->
+            </div>
+
+            <!-- صندوق التلميحات المساعد والجميل -->
+            <div id="hint-accordion" class="mb-6 bg-amber-50/50 rounded-2xl border border-amber-100 overflow-hidden">
+                <button onclick="toggleHint()" class="w-full px-5 py-3 flex items-center justify-between text-amber-800 font-bold text-sm focus:outline-none hover:bg-amber-100/50 transition">
+                    <span class="flex items-center gap-2">
+                        <span>💡</span> تلميح لمساعدتك على الحل:
+                    </span>
+                    <svg id="hint-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="hint-content" class="hidden px-5 pb-4 text-slate-600 text-sm border-t border-amber-100 pt-3 leading-relaxed">
+                    <!-- نص التلميح -->
+                </div>
+            </div>
+
+            <!-- أزرار التنقل والتحكم -->
+            <div class="flex justify-between items-center pt-4 border-t border-slate-100">
+                <div id="explanation-alert" class="hidden flex-grow mr-2 text-xs font-semibold text-slate-500">
+                    * اضغط على التالي للاستمرار في المسابقة
+                </div>
+                <button id="next-btn" onclick="nextQuestion()" disabled class="mr-auto px-6 py-3 bg-slate-300 text-slate-500 cursor-not-allowed font-bold rounded-xl transition-all flex items-center gap-2">
+                    السؤال التالي
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- 3. شاشة النتائج النهائية والمشاركة -->
+        <div id="results-screen" class="hidden w-full bg-white rounded-3xl p-6 md:p-10 custom-shadow border border-emerald-100">
+            <div class="text-center mb-8">
+                <div class="inline-block p-4 bg-emerald-50 text-emerald-600 rounded-full mb-4 animate-bounce">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-3xl font-extrabold text-slate-800 mb-2">تقبل الله طاعتكم وأحسنت!</h2>
+                <p class="text-slate-500 text-sm">لقد أنهيت مسابقة قناة Mathani بنجاح وعلم.</p>
+            </div>
+
+            <!-- إحصائيات لوحة النقاط -->
+         <!-- إحصائيات النتائج -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <!-- بطاقة النتيجة النهائية -->
+    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+        <span class="block text-2xl font-black text-emerald-600" id="final-score">0 / 15</span>
+        <span class="text-xs text-slate-500 font-bold">النتيجة النهائية</span>
+    </div>
+
+    <!-- بطاقة النسبة المئوية -->
+    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+        <span class="block text-2xl font-black text-slate-700" id="percentage">0%</span>
+        <span class="text-xs text-slate-500 font-bold">نسبة الإجابة الصحيحة</span>
+    </div>
+
+    <!-- بطاقة عدد الإجابات الصحيحة -->
+    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+        <span class="block text-2xl font-black text-slate-700" id="correct-count">0</span>
+        <span class="text-xs text-emerald-600 font-bold">إجابات صحيحة</span>
+    </div>
+
+    <!-- بطاقة عدد الإجابات الخاطئة -->
+    <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 text-center">
+        <span class="block text-2xl font-black text-slate-700" id="incorrect-count">0</span>
+        <span class="text-xs text-red-500 font-bold">إجابات خاطئة</span>
+    </div>
+</div>
+
+            <!-- رسالة التقييم والتشجيع -->
+            <div class="p-5 bg-emerald-50 border border-emerald-100 rounded-2xl text-center mb-8">
+                <h4 class="font-extrabold text-emerald-900 mb-1" id="eval-title">تقييمك المعرفي</h4>
+                <p class="text-sm text-emerald-800 leading-relaxed" id="eval-desc">جاري احتساب المستوى...</p>
+            </div>
+
+            <!-- قسم المشاركة الذكية والفعالة لتنمية القناة -->
+            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 mb-8">
+                <h4 class="font-bold text-sm text-slate-700 mb-3 text-center">📢 شارك نتيجتك مع أصدقائك وادعم القناة!</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <!-- زر مشاركة واتساب -->
+                    <button onclick="shareOnWhatsApp()" class="px-5 py-3.5 bg-[#25D366] hover:bg-[#20ba5a] active:scale-95 text-white font-bold rounded-xl transition text-sm flex items-center justify-center gap-2 shadow-sm">
+                        <!-- أيقونة واتساب -->
+                        <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.742.002-2.596-1.01-5.036-2.85-6.879C16.644 2.14 14.211 1.124 11.63 1.124 6.19 1.124 1.766 5.5 1.763 10.875c0 1.69.453 3.31 1.312 4.747L2.062 20.24l4.585-1.086z"/>
+                        </svg>
+                        أنشر النتيجة على الواتساب
+                    </button>
+                    <!-- زر نسخ النتيجة لتعليقات يوتيوب -->
+                    <button onclick="copyToClipboard()" class="px-5 py-3.5 bg-slate-800 hover:bg-slate-900 active:scale-95 text-white font-bold rounded-xl transition text-sm flex items-center justify-center gap-2 shadow-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                        </svg>
+                        نسخ النتيجة للتعليق بيوتيوب
+                    </button>
+                </div>
+            </div>
+
+            <!-- أزرار الإعادة والمراجعة -->
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <button onclick="restartQuiz()" class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 active:scale-95 text-white font-bold rounded-xl transition text-sm flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18" />
+                    </svg>
+                    إعادة المسابقة مجدداً
+                </button>
+                <button onclick="toggleSummary()" class="px-6 py-3.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold rounded-xl transition text-sm flex items-center justify-center gap-2 border border-slate-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                    <span id="summary-btn-text">مراجعة كافة الأسئلة وإجاباتها</span>
+                </button>
+            </div>
+
+            <!-- مراجعة تفصيلية قابلة للفتح والغلق للأسئلة -->
+            <div id="detailed-summary" class="hidden mt-8 space-y-6 pt-6 border-t border-slate-100 max-h-[500px] overflow-y-auto pr-2">
+                <h3 class="text-lg font-bold text-slate-800 mb-4">عرض إجاباتك بالتفصيل</h3>
+                <div id="summary-items" class="space-y-4">
+                    <!-- يتم بناؤها بواسطة جافاسكريبت -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- توست إشعار منبثق لطيف لعملية النسخ والنجاح دون إزعاج المستخدم بتنبيه المتصفح الافتراضي -->
+    <div id="toast-notification" class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-6 py-3 rounded-xl shadow-lg font-bold text-sm hidden transition-opacity duration-300 opacity-0 flex items-center gap-2 z-50">
+        <span>🎉</span> تم نسخ النتيجة بنجاح! الصقها الآن في تعليقات يوتيوب.
+    </div>
+
+    <!-- تذييل الصفحة -->
+     <footer class="w-full text-center py-4 mt-6 border-t border-emerald-100 text-xs text-slate-400">
+    <div class="flex flex-col items-center gap-1">
+        <span>الدعوة إلى الله مسؤولية وأجر مستمر. جميع المواد من مصادر موثوقة وموافقة للكتاب والسنة.</span>
+        <a href="https://mathani.hadjerhub.workers.dev/" target="_blank" class="text-emerald-700 hover:underline font-semibold inline-flex items-center gap-1">
+            📖 زر موقع مثاني لحفظ القرآن
+        </a>
+    </div>
+</footer>
+
+
+    <!-- المنطق والأسئلة البرمجية -->
+    <script>
+        // قاعدة البيانات المحدثة التي تحتوي على 15 سؤالاً تفاعلياً سهلاً وشيقاً
+        const quizData = [
+            // المحور الأول: قصص الأنبياء والسيرة النبوية (5 أسئلة)
+            {
+                topic: "قصص الأنبياء والسيرة النبوية",
+                question: "من هو النبي الكريم الذي لُقّب بـ \"أبو الأنبياء\" ودعا ربه ليريه كيف يحيي الموتى طمأنينة لقلبه؟",
+                options: [
+                    { text: "إسماعيل عليه السلام", isCorrect: false, reason: "إسماعيل هو الابن الأكبر لأبي الأنبياء، ولم يكن هو الملقب بهذا اللقب." },
+                    { text: "إبراهيم عليه السلام", isCorrect: true, reason: "أحسنت! إبراهيم عليه السلام هو أبو الأنبياء، ومن نسله خرج الأنبياء والرسل وصولاً إلى نبينا محمد ﷺ." },
+                    { text: "نوح عليه السلام", isCorrect: false, reason: "نوح عليه السلام يلقب بـ 'أبي البشر الثاني' بعد آدم، وليس أبو الأنبياء." },
+                    { text: "آدم عليه السلام", isCorrect: false, reason: "آدم عليه السلام هو أبو البشر قاطبة وأول الأنبياء." }
+                ],
+                hint: "هو النبي الذي بنى الكعبة المشرفة مع ابنه إسماعيل وجعل الله في ذريته النبوة والكتاب."
+            },
+            {
+                topic: "قصص الأنبياء والسيرة النبوية",
+                question: "ما هي الغزوة التي تكالب فيها الأعداء وأحيط بالمدينة من كل صوب، ونصر الله فيها المسلمين بريح قوية وجنود من الملائكة لم يروها؟",
+                options: [
+                    { text: "غزوة بدر الكبرى", isCorrect: false, reason: "بدر كانت الغزوة الأولى ولها تفاصيل نصر أخرى، ولم يحفر فيها الخندق." },
+                    { text: "غزوة أحد", isCorrect: false, reason: "في أحد لم يكن هناك حصار من حول المدينة ولم تكن الريح الباردة هي السبب الأساسي لنهايتها." },
+                    { text: "غزوة الخندق (الأحزاب)", isCorrect: true, reason: "رائع جداً! تحالف الأحزاب لحصار المدينة فحفر المسلمون خندقاً، ونصرهم الله بريح باردة قلبت قدورهم وأرعبتهم." },
+                    { text: "غزوة خيبر", isCorrect: false, reason: "خيبر كانت لفتح حصون خارج المدينة ولم يحصل فيها حصار للأحزاب حول المدينة." }
+                ],
+                hint: "تسمى أيضاً بغزوة الأحزاب، وقد اقترح فيها الصحابي سلمان الفارسي رضي الله عنه حفر خندق لحماية المدينة."
+            },
+            {
+                topic: "قصص الأنبياء والسيرة النبوية",
+                question: "من هو الصحابي الجليل وثاني اثنين في الغار الذي رافق النبي ﷺ في أصعب أوقات هجرته المباركة من مكة إلى المدينة؟",
+                options: [
+                    { text: "عمر بن الخطاب رضي الله عنه", isCorrect: false, reason: "عمر هاجر جهاراً بمفرده، بينما الرفيق الحميم في الغار كان صحابياً آخر." },
+                    { text: "علي بن أبي طالب رضي الله عنه", isCorrect: false, reason: "علي رضي الله عنه بقي في مكة لينام في فراش النبي ﷺ ويؤدي الأمانات لأهلها." },
+                    { text: "أبو بكر الصديق رضي الله عنه", isCorrect: true, reason: "أحسنت! هو الصديق رضي الله عنه الذي رافقه في الغار وقال له النبي ﷺ: 'ما ظنك باثنين الله ثالثهما'." },
+                    { text: "عثمان بن عفان رضي الله عنه", isCorrect: false, reason: "عثمان هاجر إلى الحبشة أولاً ثم هاجر إلى المدينة، ولم يرافق النبي في غار ثور." }
+                ],
+                hint: "هو أول من أسلم من الرجال وأول الخلفاء الراشدين، وهو رفيق الدرب المخلص في السفر والغار."
+            },
+            {
+                topic: "قصص الأنبياء والسيرة النبوية",
+                question: "كم عدد السنوات التي قضاها النبي ﷺ في مكة المكرمة يدعو الناس إلى التوحيد والإيمان برفق وتدرج قبل أن يهاجر إلى المدينة المنورة؟",
+                options: [
+                    { text: "10 سنوات", isCorrect: false, reason: "10 سنوات هي المدة التي قضاها النبي ﷺ في المدينة المنورة بعد الهجرة لتأسيس الدولة الإسلامية." },
+                    { text: "13 سنة", isCorrect: true, reason: "إجابة صحيحة! نزل الوحي على النبي ﷺ بعمر الأربعين وهاجر بعمر الثالثة والخمسين، فقضى في مكة 13 عاماً يدعو للتوحيد الصافي." },
+                    { text: "23 سنة", isCorrect: false, reason: "23 سنة هي مدة الرسالة والوحي الإجمالية كلها (بين مكة والمدينة)." },
+                    { text: "5 سنوات", isCorrect: false, reason: "مدة قصيرة جداً؛ فبناء العقيدة الراسخة في قلوب الصحابة بمكة استغرق وقتاً أطول بكثير." }
+                ],
+                hint: "فترة الدعوة في مكة كانت أطول من فترة الدعوة في المدينة المنورة بثلاث سنوات."
+            },
+            {
+                topic: "قصص الأنبياء والسيرة النبوية",
+                question: "من هو النبي الذي أرسله الله إلى فرعون الطاغية وأيده بمعجزة العصا السحرية التي تحولت لثعبان، وانفلق له البحر نصفين؟",
+                options: [
+                    { text: "عيسى عليه السلام", isCorrect: false, reason: "معجزات عيسى كانت إبراء الأكمه والأبرص وإحياء الموتى بإذن الله وليس شق البحر." },
+                    { text: "موسى عليه السلام", isCorrect: true, reason: "صحيح! موسى عليه السلام هو كليم الله الذي أرسل لبني إسرائيل وفرعون ونجاه الله بشق البحر بعصاه." },
+                    { text: "يوسف عليه السلام", isCorrect: false, reason: "يوسف مكنه الله في مصر كوزير وعبر الرؤى، لكن معجزة شق البحر ولقاء فرعون الطاغية كانت لنبي آخر." },
+                    { text: "سليمان عليه السلام", isCorrect: false, reason: "سليمان سخر الله له الجن والريح وتكلم مع الحيوانات، ولم يرسل لمقاومة فرعون." }
+                ],
+                hint: "هو كليم الله الذي أُعطي معجزتي العصا واليد البيضاء، وصاحب الخضر في الرحلة الشهيرة بـ سورة الكهف."
+            },
+
+            // المحور الثاني: مفاهيم دينية مبسطة ومعلومات سريعة (5 أسئلة)
+            {
+                topic: "مفاهيم دينية ومعلومات سريعة",
+                question: "ما هي أقصر سورة في القرآن الكريم كله وتتكون من ثلاث آيات فقط، وتبشر النبي ﷺ بنهر عظيم في الجنة؟",
+                options: [
+                    { text: "سورة الإخلاص", isCorrect: false, reason: "سورة الإخلاص تتكون من 4 آيات وهي تعدل ثلث القرآن، لكنها ليست الأقصر حكماً." },
+                    { text: "سورة الكوثر", isCorrect: true, reason: "أحسنت! سورة الكوثر هي أقصر سورة في كتاب الله، والكوثر هو نهر عظيم أعطاه الله لنبيه ﷺ في الجنة." },
+                    { text: "سورة العصر", isCorrect: false, reason: "العصر سورة قصيرة جداً من 3 آيات، لكن عدد كلماتها وحروفها أكثر من سورة الكوثر." },
+                    { text: "سورة الناس", isCorrect: false, reason: "سورة الناس تتكون من 6 آيات وهي آخر سورة في ترتيب المصحف الشريف." }
+                ],
+                hint: "تبدأ هذه السورة بقوله تعالى: {إنا أعطيناك الكوثر}."
+            },
+            {
+                topic: "مفاهيم دينية ومعلومات سريعة",
+                question: "أي من العبادات التالية تُمثل عماد الدين، وهي الصلة اليومية المتكررة 5 مرات بين العبد وخالقه وأول ما يُحاسب عليه العبد؟",
+                options: [
+                    { text: "صوم رمضان", isCorrect: false, reason: "الصيام عبادة سنوية رائعة ومطهرة للنفس، لكنها ليست عماد الدين المتكرر يومياً." },
+                    { text: "الزكاة", isCorrect: false, reason: "الزكاة عبادة مالية تجب في العام مرة على الأغنياء، وليست صلة يومية لكل مسلم." },
+                    { text: "إقام الصلاة", isCorrect: true, reason: "أحسنت! الصلاة هي الركن الثاني وعمود الإسلام، والصلة اليومية الدائمة التي تجدد إيمان العبد وتنهى عن الفحشاء والمنكر." },
+                    { text: "حج البيت", isCorrect: false, reason: "الحج ركن يجب مرة واحدة في العمر على من استطاع إليه سبيلاً." }
+                ],
+                hint: "قال عنها النبي ﷺ: 'العهد الذي بيننا وبينهم الصلاة، فمن تركها فقد كفر'، وهي الرابط والبلسم اليومي للقلب."
+            },
+            {
+                topic: "مفاهيم دينية ومعلومات سريعة",
+                question: "ما هي الكلمة العظيمة التي تعد أساس العقيدة الإسلامية ومفتاح الجنة الحقيقي الذي لا يدخل أحد الجنة إلا به؟",
+                options: [
+                    { text: "الحمد لله", isCorrect: false, reason: "الحمد لله كلمة حمد وشكر تملأ الميزان، ولكن هناك كلمة أعم منها هي أصل التوحيد." },
+                    { text: "أستغفر الله", isCorrect: false, reason: "الاستغفار يمحو الذنوب ويجلب الرزق، لكن الكلمة التي تبني عليها النجاة الأبدية هي كلمة أخرى." },
+                    { text: "لا إله إلا الله", isCorrect: true, reason: "إجابة ممتازة! 'لا إله إلا الله' هي كلمة التوحيد، وأعلى شعب الإيمان، وبها يشهد المسلم أنه لا معبود بحق إلا الله." },
+                    { text: "سبحان الله وبحمده", isCorrect: false, reason: "هذا تسبيح عظيم له أجر كبير في غرس النخيل بالجنة، لكن مفتاح دخول الجنة الأساسي هو التوحيد." }
+                ],
+                hint: "هي الكلمة التي يلقن بها المسلم عند الاحتضار، وأول ركن من أركان الإسلام الخمسة (الشهادة)."
+            },
+            {
+                topic: "مفاهيم دينية ومعلومات سريعة",
+                question: "ما هو المسجد المبارك الذي يقع في فلسطين وكان القبلة الأولى للمسلمين قبل أن يأمر الله بتحويل القبلة إلى الكعبة المشرفة بمكة؟",
+                options: [
+                    { text: "المسجد النبوي", isCorrect: false, reason: "المسجد النبوي بالمدينة المنورة هو مسجد النبي ﷺ، ولم يكن يوماً قبلة الصلاة الأولى." },
+                    { text: "مسجد قُباء", isCorrect: false, reason: "مسجد قُباء هو أول مسجد أسس في الإسلام بالمدينة، والصلاة فيه تعدل عمرة، لكنه ليس القبلة الأولى." },
+                    { text: "المسجد الأقصى", isCorrect: true, reason: "رائع جداً! المسجد الأقصى المبارك هو مسرى النبي ﷺ، والقبلة الأولى وثالث المساجد التي لا تُشد الرحال إلا إليها." },
+                    { text: "الجامع الأزهر", isCorrect: false, reason: "الجامع الأزهر بني في فترات لاحقة بمصر كمركز علمي وديني، وليس مسجداً تاريخياً للقبلة." }
+                ],
+                hint: "هو المسجد الذي أسري بالنبي ﷺ إليه وعرج منه إلى السماوات العلى، ويقع في أرض فلسطين الطاهرة."
+            },
+            {
+                topic: "مفاهيم دينية ومعلومات سريعة",
+                question: "ما هو الشهر الهجري العظيم الذي فرضه الله على المسلمين لصيامه وفيه ليلة هي خير من ألف شهر؟",
+                options: [
+                    { text: "شهر شعبان", isCorrect: false, reason: "شعبان هو الشهر الذي يسبق رمضان وتُرفع فيه الأعمال، لكن ليس فيه الصيام المفروض." },
+                    { text: "شهر رمضان", isCorrect: true, reason: "أحسنت! شهر رمضان المبارك هو شهر الصيام والقرآن، وفيه ليلة القدر العظيمة التي تعدل عبادتها أكثر من 83 عاماً." },
+                    { text: "شهر محرم", isCorrect: false, reason: "محرم شهر حرام يستحب صيامه وصيام يوم عاشوراء فيه، لكنه ليس الفرض السنوي الشامل." },
+                    { text: "شهر ذي الحجة", isCorrect: false, reason: "شهر ذي الحجة هو شهر الحج وعيد الأضحى المبارك، وليس شهر فرض صيام الأيام كلها." }
+                ],
+                hint: "قال الله فيه: {شَهْرُ رَمَضَانَ الَّذِي أُنْزِلَ فِيهِ الْقُرْآنُ هُدًى لِلنَّاسِ وَبَيِّنَاتٍ مِنَ الْهُدَى وَالْفُرْقَانِ}."
+            },
+
+            // المحور الثالث: أخلاقيات وقيم المسلم اليومية (5 أسئلة)
+            {
+                topic: "أخلاقيات وقيم المسلم اليومية",
+                question: "أي من السلوكيات التالية تعتبر شعبة ملموسة من شعب الإيمان، وتُثبت رغبة المسلم في نفع مجتمعه وعدم إيذاء الآخرين في طرقاتهم؟",
+                options: [
+                    { text: "إماطة الأذى عن الطريق", isCorrect: true, reason: "صحيح تماماً! إماطة غصن أو حجر أو قاذورات عن طريق الناس هو صدقة يثاب عليها المسلم ودليل ناصع على إيمانه ورقيه." },
+                    { text: "المشي بسرعة مفرطة", isCorrect: false, reason: "السرعة المفرطة قد تسبب الحوادث وتؤذي الناس، والسكينة هي المطلوبة شرعاً." },
+                    { text: "الجلوس الطويل في الطرقات بدون حاجة", isCorrect: false, reason: "الجلوس في الطرقات يضيقها على المارين، وقد نهى النبي ﷺ عن ذلك إلا بإعطاء الطريق حقه." },
+                    { text: "إلقاء الأوراق والمخلفات من السيارة", isCorrect: false, reason: "هذا السلوك يؤذي البيئة والناس ويتنافى تماماً مع خلق النظافة وإماطة الأذى." }
+                ],
+                hint: "قال النبي ﷺ: 'الإيمان بضع وسبعون أو بضع وستين شعبة... وأدناها إماطة الأذى عن الطريق'."
+            },
+            {
+                topic: "أخلاقيات وقيم المسلم اليومية",
+                question: "جاء رجل إلى النبي ﷺ يطلب وصية وجيزة يكررها، فأوصاه بكلمة واحدة عظيمة تحفظ سلامة النفس والبيوت والعلاقات، ما هي؟",
+                options: [
+                    { text: "تصدق كثيراً", isCorrect: false, reason: "الصدقة تطفئ الخطيئة ولها فضل كبير، لكن الوصية المحددة لهذا السائل كانت لتجنب انفعال مدمر." },
+                    { text: "لا تغضب", isCorrect: true, reason: "أحسنت! قال له ﷺ مراراً: 'لا تغضب'؛ لأن الغضب هو أصل الكثير من الشرور والندم والتسرع في الكلام والتصرف." },
+                    { text: "نم مبكراً", isCorrect: false, reason: "النوم المبكر صحي ومفيد لقيام الليل وصلاة الفجر، لكنه ليس الوصية النبوية الشهيرة للرجل السائل." },
+                    { text: "سافر دائماً", isCorrect: false, reason: "السفر فيه فوائد وتجارب، ولكنه ليس الوصية الأساسية والجامعة لحفظ الأخلاق وضبط النفس." }
+                ],
+                hint: "هي كلمة واحدة تنهى عن الانفعال الشديد وتدعو المسلم إلى الحلم والتأني والتحكم في أعصابه عند حدوث الخلافات."
+            },
+            {
+                topic: "أخلاقيات وقيم المسلم اليومية",
+                question: "ما هو الخلق العظيم الذي يضمن ثقة الناس بالمسلم، ويعني مطابقة قوله وفعله للواقع، وهو يهدي إلى البر المؤدي للجنة؟",
+                options: [
+                    { text: "التكبر", isCorrect: false, reason: "التكبر خلق مذموم يمنع صاحبه من دخول الجنة ويفسد القلوب والعلاقات." },
+                    { text: "الصدق", isCorrect: true, reason: "إجابة ممتازة! الصدق هو مطابقة الحقيقة، وقال عنه ﷺ: 'إن الصدق يهدي إلى البر، وإن البر يهدي إلى الجنة'." },
+                    { text: "العجلة", isCorrect: false, reason: "العجلة من الشيطان وتؤدي للخطأ والندم، وليست خلقاً يبعث على الثقة والبر." },
+                    { text: "المجاملة الكاذبة", isCorrect: false, reason: "المجاملة إذا بنيت على كذب ونفاق تصبح ذنباً وخداعاً وتنافي خلق المسلم الأصيل." }
+                ],
+                hint: "ضد هذا الخلق هو 'الكذب'، وبسببه لُقب نبينا ﷺ قبل البعثة بـ 'الأمين' والـ..."
+            },
+            {
+                topic: "أخلاقيات وقيم المسلم اليومية",
+                question: "كيف يحقق المسلم أعلى درجات \"بر الوالدين\" في حياتهما طاعة لله وعرفاناً بجميلهما وتعبية تربيتهما؟",
+                options: [
+                    { text: "بتجنب زيارتهما إلا في المناسبات الرسمية والأعياد فقط", isCorrect: false, reason: "هذا تقصير جاف لا يرقى لمرتبة الإحسان والبر والصلة الدائمة المطلوبة شرعاً." },
+                    { text: "بالحديث معهما بصوت مرتفع لإظهار قوة شخصيته", isCorrect: false, reason: "رفع الصوت أو الجدال مع الوالدين يتنافى مع خلق البر والوقار والاحترام الواجب لهما." },
+                    { text: "بالإحسان إليهما، وطاعتهما بالمعروف، وتجنب قول كلمة ضجر كـ \"أف\"", isCorrect: true, reason: "أحسنت! قال تعالى: {فلا تقل لهما أف ولا تنهرهما وقل لهما قولاً كريماً}؛ فالبر يبدأ من الكلمة الطيبة البسيطة والرعاية الحانية." },
+                    { text: "بالاعتماد المالي التام عليهما وتجنب مساعدتهما", isCorrect: false, reason: "هذا اتكال وعقوق، والمسلم البار يبذل جهده وماله لخدمة والديه وإعانتهما." }
+                ],
+                hint: "قرن الله حقه في العبادة بحق الوالدين في الإحسان في آيات كثيرة مثل قوله تعالى: {وقضى ربك ألا تعبدوا إلا إياه وبالوالدين إحساناً}."
+            },
+            {
+                topic: "أخلاقيات وقيم المسلم اليومية",
+                question: "ما هو الخلق النفسي النبيل الذي يعني سلامة الصدر من الغل، وأن يتمنى المسلم لأصدقائه وجيرانه كل خير وتيسير يرجوه لنفسه؟",
+                options: [
+                    { text: "الحسد والغيرة", isCorrect: false, reason: "الحسد يأكل الحسنات كما تأكل النار الحطب، وهو تمني زوال النعمة عن الآخرين." },
+                    { text: "سلامة الصدر ومحبة الخير للناس", isCorrect: true, reason: "إجابة صحيحة ومثالية! قال ﷺ: 'لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه'، وهذا يورث المحبة وسلامة الصدر ونقاء المجتمع." },
+                    { text: "الأنانية وحب الذات", isCorrect: false, reason: "الأنانية تدعو المسلم للتفكير في مصلحته فقط وتضر بصلاته الاجتماعية وعلاقاته." },
+                    { text: "التنافس غير الشريف للانتصار الشخصي", isCorrect: false, reason: "هذا يورث البغضاء والتناحر بدلاً من التآخي والمحبة والتكافل." }
+                ],
+                hint: "هو التطبيق العملي لحديث النبي ﷺ: 'لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه'."
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let userAnswers = []; // يسجل مؤشرات إجابات المستخدم للتقييم والمراجعة النهائية
+        let isAnswered = false;
+
+        // بدء المسابقة
+        function startQuiz() {
+            document.getElementById('welcome-screen').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+            document.getElementById('results-screen').classList.add('hidden');
+            currentQuestionIndex = 0;
+            score = 0;
+            userAnswers = [];
+            loadQuestion();
+        }
+
+        // تحميل وعرض السؤال الحالي والخيارات المتاحة له
+        function loadQuestion() {
+            isAnswered = false;
+            const qData = quizData[currentQuestionIndex];
+
+            // إعدادات زر الانتقال للأسفل والتنبيه
+            document.getElementById('next-btn').disabled = true;
+            document.getElementById('next-btn').className = "mr-auto px-6 py-3 bg-slate-200 text-slate-400 cursor-not-allowed font-bold rounded-xl transition-all flex items-center gap-2";
+            document.getElementById('explanation-alert').classList.add('hidden');
+
+            // تحديث شريط التقدم المرئي
+            const progressPercent = ((currentQuestionIndex + 1) / quizData.length) * 100;
+            document.getElementById('progress-bar-fill').style.width = `${progressPercent}%`;
+            document.getElementById('question-index-badge').textContent = `السؤال ${currentQuestionIndex + 1} من ${quizData.length}`;
+            document.getElementById('topic-badge').textContent = `المحور: ${qData.topic}`;
+            
+            // كتابة السؤال
+            document.getElementById('question-text').textContent = qData.question;
+            
+            // إعداد وتجهيز التلميح وإغلاقه تلقائياً
+            const hintContent = document.getElementById('hint-content');
+            hintContent.textContent = qData.hint;
+            hintContent.classList.add('hidden');
+            document.getElementById('hint-icon').classList.remove('rotate-180');
+
+            // إدراج الخيارات ديناميكياً
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            qData.options.forEach((opt, idx) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = "option-btn w-full text-right p-4 rounded-2xl border-2 border-slate-150 bg-slate-50/50 hover:bg-slate-100 hover:border-slate-300 font-semibold text-slate-700 focus:outline-none flex flex-col gap-1";
+                button.setAttribute('onclick', `selectOption(${idx})`);
+                
+                button.innerHTML = `
+                    <div class="flex items-start gap-3 w-full">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full border border-slate-300 bg-white flex items-center justify-center font-bold text-xs text-slate-500 mt-0.5" id="opt-badge-${idx}">
+                            ${String.fromCharCode(65 + idx)}
+                        </span>
+                        <span class="flex-grow text-sm md:text-base leading-relaxed">${opt.text}</span>
+                    </div>
+                    <div id="reason-${idx}" class="hidden mt-2 text-xs text-slate-600 bg-white/70 p-3 rounded-lg border border-slate-200 leading-relaxed font-normal">
+                    </div>
+                `;
+                optionsContainer.appendChild(button);
+            });
+        }
+
+        // إظهار أو إخفاء التلميح (الأكورديون)
+        function toggleHint() {
+            const hintContent = document.getElementById('hint-content');
+            const hintIcon = document.getElementById('hint-icon');
+            if (hintContent.classList.contains('hidden')) {
+                hintContent.classList.remove('hidden');
+                hintIcon.classList.add('rotate-180');
+            } else {
+                hintContent.classList.add('hidden');
+                hintIcon.classList.remove('rotate-180');
+            }
+        }
+
+        // اختيار خيار معين ومعالجة النتيجة فورياً وبصرياً وبشكل جذاب جداً
+        function selectOption(selectedIdx) {
+            if (isAnswered) return; // منع التكرار
+            isAnswered = true;
+
+            const qData = quizData[currentQuestionIndex];
+            userAnswers.push(selectedIdx); // توثيق الإجابة
+
+            const isCorrect = qData.options[selectedIdx].isCorrect;
+            if (isCorrect) {
+                score++;
+            }
+
+            // إبراز الألوان والرموز للخيارات بناءً على صحتها
+            const optionsContainer = document.getElementById('options-container');
+            const buttons = optionsContainer.getElementsByClassName('option-btn');
+
+            qData.options.forEach((opt, idx) => {
+                const btn = buttons[idx];
+                const badge = document.getElementById(`opt-badge-${idx}`);
+                const reasonBox = document.getElementById(`reason-${idx}`);
+                
+                // إلغاء كبسة الخيار وتأثير الماوس
+                btn.removeAttribute('onclick');
+                btn.classList.remove('hover:bg-slate-100', 'hover:border-slate-300');
+
+                // كشف تفاصيل سبب الإجابة والتصحيح
+                reasonBox.textContent = opt.reason;
+                reasonBox.classList.remove('hidden');
+
+                if (opt.isCorrect) {
+                    // إجابة صحيحة: تلوين بالأخضر مع علامة صح (✓) رائعة ومجوفة دائرية كما تمنيت
+                    btn.classList.add('border-emerald-500', 'bg-emerald-50/80');
+                    btn.classList.remove('border-slate-150', 'bg-slate-50/50');
+                    badge.className = "flex-shrink-0 w-6 h-6 rounded-full bg-emerald-600 border border-emerald-600 text-white flex items-center justify-center font-bold text-xs mt-0.5 transform scale-110 transition-transform duration-200";
+                    badge.innerHTML = `<svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>`;
+                } else if (idx === selectedIdx) {
+                    // إجابة خاطئة محددة: تلوين بالأحمر مع علامة الغلط المحبوبة لديك (✗)
+                    btn.classList.add('border-red-500', 'bg-red-50/80');
+                    btn.classList.remove('border-slate-150', 'bg-slate-50/50');
+                    badge.className = "flex-shrink-0 w-6 h-6 rounded-full bg-red-600 border border-red-600 text-white flex items-center justify-center font-bold text-xs mt-0.5 transform scale-110 transition-transform duration-200";
+                    badge.innerHTML = `✗`;
+                } else {
+                    // خيار خاطئ لم يحدده المستخدم: إضفاء لمسة باهتة
+                    btn.classList.add('opacity-60');
+                }
+            });
+
+            // تفعيل زر الانتقال للسؤال التالي
+            const nextBtn = document.getElementById('next-btn');
+            nextBtn.disabled = false;
+            nextBtn.className = "mr-auto px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl transition-all shadow-md shadow-emerald-200 flex items-center gap-2 transform active:scale-95";
+            document.getElementById('explanation-alert').classList.remove('hidden');
+        }
+
+        // التوجه للسؤال التالي أو استعراض النتائج عند الوصول لآخر مسألة
+        function nextQuestion() {
+            if (currentQuestionIndex < quizData.length - 1) {
+                currentQuestionIndex++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        // عرض الشاشة النهائية مع درجات التقييم وأزرار المشاركة
+        function showResults() {
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('results-screen').classList.remove('hidden');
+
+            const percentage = Math.round((score / quizData.length) * 100);
+
+            document.getElementById('final-score').textContent = `${score} / ${quizData.length}`;
+            document.getElementById('percentage').textContent = `${percentage}%`;
+            document.getElementById('correct-count').textContent = score;
+            document.getElementById('incorrect-count').textContent = quizData.length - score;
+
+            const evalTitle = document.getElementById('eval-title');
+            const evalDesc = document.getElementById('eval-desc');
+
+            // رسائل تقييم وتشجيع متلائمة ممتعة
+            if (percentage === 100) {
+                evalTitle.textContent = "امتياز نبيل وعلامة كاملة! 🌟👑";
+                evalDesc.textContent = "ما شاء الله تبارك الله! لقد أجبت على جميع الأسئلة الـ 15 بشكل صحيح، معلوماتك وسيرتك ممتازة وقوية جداً، أهلاً بك سفيراً للخير والمعرفة في القناة.";
+            } else if (percentage >= 80) {
+                evalTitle.textContent = "نتيجة متميزة جداً ورائعة! ✨🌹";
+                evalDesc.textContent = "أداء قوي ودرجة فخر! تملك مخزوناً قيماً ووعياً ممتازاً بقصص الأنبياء وآداب الإسلام اليومية.";
+            } else if (percentage >= 50) {
+                evalTitle.textContent = "أحسنت محاولة ممتازة ونافعة! 🌱📖";
+                evalDesc.textContent = "أداء جيد، هناك بعض النقاط اللطيفة التي تحتاج لمزيد من الملاحظة. يمكنك التعلم من المراجعة المتاحة بالأسفل لزيادة رصيدك الثقافي.";
+            } else {
+                evalTitle.textContent = "فرصة رائعة لتعلم المزيد ومراجعة العلم! 💡📚";
+                evalDesc.textContent = "المعرفة تأتي بالتعلم والتكرار! ننصحك بفتح خيار مراجعة الأسئلة بالأسفل لقراءة الشروحات السريعة والممتعة وحفظها وتحدي نفسك مجدداً.";
+            }
+
+            // بناء تقرير المراجعة الشامل والنهائي
+            buildDetailedSummary();
+        }
+
+        // تشغيل وإظهار/إخفاء جدول المراجعة الدقيق للأسئلة مع الفوائد والتلميحات
+        function toggleSummary() {
+            const summaryDiv = document.getElementById('detailed-summary');
+            const btnText = document.getElementById('summary-btn-text');
+            if (summaryDiv.classList.contains('hidden')) {
+                summaryDiv.classList.remove('hidden');
+                btnText.textContent = "إخفاء تفاصيل المراجعة";
+                summaryDiv.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                summaryDiv.classList.add('hidden');
+                btnText.textContent = "مراجعة كافة الأسئلة وإجاباتها";
+            }
+        }
+
+        // بناء بطاقات التفاصيل للأسئلة
+        function buildDetailedSummary() {
+            const summaryItemsContainer = document.getElementById('summary-items');
+            summaryItemsContainer.innerHTML = '';
+
+            quizData.forEach((q, qIdx) => {
+                const userChoiceIdx = userAnswers[qIdx];
+                const isUserCorrect = q.options[userChoiceIdx].isCorrect;
+
+                const card = document.createElement('div');
+                card.className = `p-5 rounded-2xl border ${isUserCorrect ? 'border-emerald-100 bg-emerald-50/30' : 'border-red-100 bg-red-50/20'} space-y-3`;
+
+                let optionsListHtml = '';
+                q.options.forEach((opt, oIdx) => {
+                    let optClass = "text-slate-600 text-xs md:text-sm flex items-start gap-2 p-2 rounded-lg";
+                    let prefix = `<span class="w-5 h-5 rounded-full border border-slate-300 text-xs flex items-center justify-center font-bold text-slate-400 mt-0.5">${String.fromCharCode(65 + oIdx)}</span>`;
+                    
+                    if (opt.isCorrect) {
+                        optClass = "text-emerald-800 bg-emerald-100/50 font-semibold text-xs md:text-sm flex items-start gap-2 p-2 rounded-lg border border-emerald-200";
+                        prefix = `<span class="w-5 h-5 rounded-full bg-emerald-600 text-white text-xs flex items-center justify-center font-bold mt-0.5">✓</span>`;
+                    } else if (oIdx === userChoiceIdx) {
+                        optClass = "text-red-800 bg-red-100/50 font-semibold text-xs md:text-sm flex items-start gap-2 p-2 rounded-lg border border-red-200";
+                        prefix = `<span class="w-5 h-5 rounded-full bg-red-600 text-white text-xs flex items-center justify-center font-bold mt-0.5">✗</span>`;
+                    }
+
+                    optionsListHtml += `
+                        <div class="${optClass}">
+                            ${prefix}
+                            <div class="flex-grow">
+                                <p>${opt.text}</p>
+                                <p class="text-xs mt-1 text-slate-500 font-normal"><span class="font-bold text-slate-600">الشرح والسبب:</span> ${opt.reason}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                card.innerHTML = `
+                    <div class="flex items-center justify-between gap-2 border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold text-emerald-700">${q.topic}</span>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold ${isUserCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}">
+                            ${isUserCorrect ? 'إجابة صحيحة' : 'إجابة خاطئة'}
+                        </span>
+                    </div>
+                    <h4 class="font-bold text-sm md:text-base text-slate-800 leading-relaxed">${qIdx + 1}. ${q.question}</h4>
+                    <div class="space-y-2 mt-2">
+                        ${optionsListHtml}
+                    </div>
+                    <div class="bg-amber-50 text-amber-900 text-xs p-3 rounded-xl border border-amber-100 mt-2">
+                        <span class="font-bold">💡 تلميح السؤال المساعد:</span> ${q.hint}
+                    </div>
+                `;
+
+                summaryItemsContainer.appendChild(card);
+            });
+        }
+
+        // وظيفة تشارك وحساب نص النتيجة على واتساب وإرساله مباشرة للدردشة
+        function shareOnWhatsApp() {
+            const resultText = `🏆 لقد حصلت على النتيجة الرائعة (${score} من 15) في كويز الثقافة الإسلامية التفاعلي الممتع والمقدم من قناة "Mathani" لتدبر القرآن! \n\nتحداني وجرب معرفتك وادعم القناة بالاشتراك عبر الرابط التالي: \n👉 https://www.youtube.com/@MathaniQuran`;
+            const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(resultText)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+       function copyToClipboard() {
+    const copyText = `ما شاء الله 🌸\nلقد أكملت مسابقة قناة "Mathani" الثقافية الرائعة.\nنتيجتي الإجمالية هي: ⭐ [ ${score} من 15 ] ⭐\n\nأنصح الجميع بتجربة الكويز وتحدي أنفسهم، ودعم القناة الرائعة بالاشتراك لمتابعة تلاوات القرآن الجميلة! \n👉 @MathaniQuran`;
+
+    // استخدام Clipboard API الحديث إذا كان متاحاً وفي سياق آمن (HTTPS)
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(copyText)
+            .then(showToastNotification)
+            .catch(() => fallbackCopy(copyText));
+    } else {
+        fallbackCopy(copyText);
+    }
+}
+
+// دالة احتياطية للنسخ بالطريقة القديمة
+function fallbackCopy(text) {
+    const tempTextarea = document.createElement('textarea');
+    tempTextarea.value = text;
+    tempTextarea.style.position = 'fixed';
+    tempTextarea.style.left = '-9999px';
+    document.body.appendChild(tempTextarea);
+    tempTextarea.select();
+    try {
+        document.execCommand('copy');
+        showToastNotification();
+    } catch (err) {
+        alert('تعذر نسخ النص، يرجى المحاولة يدوياً.');
+    }
+    document.body.removeChild(tempTextarea);
+}
+
+        // إظهار الإشعار المنبثق لنجاح النسخ
+        function showToastNotification() {
+            const toast = document.getElementById('toast-notification');
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('opacity-100');
+            }, 50);
+
+            // إخفاء تلقائي بعد 3.5 ثانية
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 300);
+            }, 3500);
+        }
+
+        // إعادة تشغيل المسابقة
+        function restartQuiz() {
+            document.getElementById('results-screen').classList.add('hidden');
+            document.getElementById('detailed-summary').classList.add('hidden');
+            document.getElementById('summary-btn-text').textContent = "مراجعة كافة الأسئلة وإجاباتها";
+            startQuiz();
+        }
+    </script>
+
+</body>
+</html>
